@@ -1,0 +1,29 @@
+.chat-window-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 648px) {
+    .chat-window-wrapper {
+        min-width: 648px;
+    }
+}
+
+.left-pane {
+    background-color: #eeeeee;
+    flex: 0 0 35%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-right: 1px solid #d2c8c8;
+    box-sizing: border-box;
+}
+
+.right-pane {
+    flex: 0 0 65%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
