@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Icon } from 'material-ui';
 import '../css/message.css';
 import constants from '../constants';
-
+import PropTypes from 'prop-types';
 
 class Message extends Component {
 
@@ -43,3 +43,10 @@ class Message extends Component {
 }
 
 export default Message;
+
+Message.propTypes = {
+	type: PropTypes.oneOf(['IN', 'OUT']).isRequired,
+	content: PropTypes.string.isRequired,
+	tickType: PropTypes.oneOf([constants.NEW, constants.SENT, constants.RECEIVED, constants.VIEWED]).isRequired,
+	time: PropTypes.string.isRequired
+};
