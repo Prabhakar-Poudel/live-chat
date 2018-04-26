@@ -42,7 +42,7 @@ class SendMessage extends Component {
 						InputProps={{
 							disableUnderline:   true,
 						}}
-						rowsMax="3"
+						rowsMax="4"
 						onChange={this.handleChange}
 						value={this.state.inputValue}
 					/>
