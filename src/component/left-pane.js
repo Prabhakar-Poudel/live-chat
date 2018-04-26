@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/leftPane.css';
 import { Avatar, Divider, Icon, List, ListItem, ListItemText } from 'material-ui';
 import constants from '../constants';
+import PropTypes from 'prop-types';
 
 
 class LeftPane extends Component {
@@ -60,3 +61,10 @@ class LeftPane extends Component {
 }
 
 export default LeftPane;
+
+LeftPane.propTypes = {
+	userName: PropTypes.string.isRequired,
+	className: PropTypes.string,
+	currentSelected: PropTypes.string,
+	userSelected: PropTypes.func.isRequired,
+};

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/sendMessage.css';
 import { TextField } from 'material-ui';
 import { Icon } from 'material-ui';
+import PropTypes from 'prop-types';
 
 class SendMessage extends Component {
 
@@ -57,3 +58,7 @@ class SendMessage extends Component {
 }
 
 export default SendMessage;
+
+SendMessage.propTypes = {
+	sendNewMessage: PropTypes.func.isRequired,
+};

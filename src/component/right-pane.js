@@ -5,7 +5,7 @@ import moment from 'moment';
 import Message from './message';
 import SendMessage from './send-message';
 import constants from '../constants';
-
+import PropTypes from 'prop-types';
 
 const OUT = 'OUT';
 const IN = 'IN';
@@ -101,3 +101,9 @@ class RightPane extends Component {
 }
 
 export default RightPane;
+
+RightPane.propTypes = {
+	className: PropTypes.string,
+	userName: PropTypes.string.isRequired,
+	currentSelected: PropTypes.string
+};
