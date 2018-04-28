@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../css/sendMessage.css';
-import { TextField } from 'material-ui';
-import { Icon } from 'material-ui';
+import {  Icon, TextField } from 'material-ui';
 import PropTypes from 'prop-types';
 
 class SendMessage extends Component {
@@ -48,7 +47,7 @@ class SendMessage extends Component {
 					/>
 				</div>
 				{ this.state.showSend &&
-				<div className="send-button-wrapper">
+				<div type='submit' className="send-button-wrapper">
 					<Icon onClick={this.handleClick}>send</Icon>
 				</div>
 				}
