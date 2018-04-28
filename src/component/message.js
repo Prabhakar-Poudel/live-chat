@@ -47,6 +47,6 @@ export default Message;
 Message.propTypes = {
 	type: PropTypes.oneOf(['IN', 'OUT']).isRequired,
 	content: PropTypes.string.isRequired,
-	tickType: PropTypes.oneOf([constants.NEW, constants.SENT, constants.RECEIVED, constants.VIEWED]).isRequired,
+	tickType: PropTypes.oneOf([constants.NEW, constants.SENT, constants.RECEIVED, constants.VIEWED]),
 	time: PropTypes.string.isRequired
 };

@@ -38,12 +38,12 @@ class UserName extends Component {
 					<div className="title">
 						<span>Please enter your user name</span>
 					</div>
-					<div className="user">
-						<TextField value={userName} id="user-name-input" placeholder="User Name" style={{margiBbottom: '5px'}} onChange={this.handleChange} />
+					<form className="user">
+						<TextField value={userName} autoFocus id="user-name-input" placeholder="User Name" style={{margiBbottom: '5px'}} onChange={this.handleChange} />
 						<Link replace to={{ pathname: '/chat', state: { userName: userName.length > 0 ? userName : null } }}>
-							<Button color="primary" variant="raised" fullWidth onClick={this.handleClick}>Continue</Button>
+							<Button type='submit' color="primary" variant="raised" fullWidth onClick={this.handleClick}>Continue</Button>
 						</Link>
-					</div>
+					</form>
 				</Paper>
 			</div>
 		);
