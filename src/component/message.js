@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon } from 'material-ui';
+import { Icon } from '@material-ui/core';
 import '../css/message.css';
 import constants from '../constants';
 import PropTypes from 'prop-types';

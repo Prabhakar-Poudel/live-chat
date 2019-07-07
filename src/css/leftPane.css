@@ -56,3 +56,7 @@
 .user-list div.active {
     background-color: #e1dfdf;
 }
+
+.user-list .username {
+    padding: 8px;
+}

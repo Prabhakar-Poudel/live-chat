@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import '../css/leftPane.css';
-import { Avatar, Divider, Icon, List, ListItem, ListItemText } from 'material-ui';
+import { Avatar, Divider, Icon, List, ListItem, ListItemText } from '@material-ui/core';
 import constants from '../constants';
 import PropTypes from 'prop-types';
-
 
 class LeftPane extends Component {
 	constructor() {
@@ -39,7 +38,7 @@ class LeftPane extends Component {
 							</button>
 						</div>
 					</div>
-            
+
 					<List className="user-list">
 						{this.state.userList.map((user, index) => {
 							const className = user === this.props.currentSelected ? 'active' : null;
@@ -47,7 +46,7 @@ class LeftPane extends Component {
 								<div  key={index} onClick={() => (this.props.userSelected(user))}>
 									<ListItem dense button className={className}>
 										<Avatar><Icon>person</Icon></Avatar>
-										<ListItemText  primary={user} />
+										<ListItemText primary={user} className="username" />
 									</ListItem>
 									<Divider />
 								</div>
@@ -66,5 +65,5 @@ LeftPane.propTypes = {
 	userName: PropTypes.string.isRequired,
 	className: PropTypes.string,
 	currentSelected: PropTypes.string,
-	userSelected: PropTypes.func.isRequired,
+	userSelected: PropTypes.func.isRequired
 };

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/rightPane.css';
-import { Icon } from 'material-ui';
+import { Icon } from '@material-ui/core';
 import moment from 'moment';
 import Message from './message';
 import SendMessage from './send-message';
