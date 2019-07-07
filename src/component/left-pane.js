@@ -76,12 +76,12 @@ class LeftPane extends Component {
 					</div>
 
 					<List className="user-list">
-						{userList.reduce((acc, user, index) => {
+						{userList.reduce((acc, user) => {
 							const className = user === currentSelected ? 'active' : null;
 
 							if (isSearchedUser(user)) {
 								acc.push(
-									<div key={`${index}-${user}`} onClick={() => userSelected(user)}>
+									<div key={user} onClick={() => userSelected(user)}>
 										<ListItem dense button className={className}>
 											<Avatar>
 												<Icon>person</Icon>
