@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import '../css/leftPane.css';
-import {
-	Avatar,
-	Divider,
-	Icon,
-	List,
-	ListItem,
-	ListItemText
-} from '@material-ui/core';
+import { Avatar, Divider, Icon, List, ListItem, ListItemText } from '@material-ui/core';
 import constants from '../constants';
 import PropTypes from 'prop-types';
 
