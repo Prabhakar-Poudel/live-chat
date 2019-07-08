@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/sendMessage.css';
-import {  Icon, TextField } from 'material-ui';
+import {  Icon, TextField } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 class SendMessage extends Component {

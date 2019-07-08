@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/userName.css';
-import { TextField, Button, Paper } from 'material-ui';
+import { TextField, Button, Paper } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import constants from '../constants';
 
@@ -41,7 +41,7 @@ class UserName extends Component {
 					<form className="user">
 						<TextField value={userName} autoFocus id="user-name-input" placeholder="User Name" style={{margiBbottom: '5px'}} onChange={this.handleChange} />
 						<Link replace to={{ pathname: '/chat', state: { userName: userName.length > 0 ? userName : null } }}>
-							<Button type='submit' color="primary" variant="raised" fullWidth onClick={this.handleClick}>Continue</Button>
+							<Button type='submit' color="primary" variant="contained" fullWidth onClick={this.handleClick}>Continue</Button>
 						</Link>
 					</form>
 				</Paper>
